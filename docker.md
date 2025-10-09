@@ -42,7 +42,10 @@ docker build -t my-express-app .
 docker run -p 5000:5000 my-express-app
 
 docker-compose up --scale backend=3 -d
+ec2-54-91-217-186.compute-1.amazonaws.com
 
+chmod 400 "MyWebServer.pem"
+ssh -i "MyWebServer.pem" ec2-user@ec2-54-91-217-186.compute-1.amazonaws.com
 ```
 
 ---
