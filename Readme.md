@@ -34,5 +34,9 @@ pm2 logs
 ```bash
 
 docker compose build
+docker compose up
+docker compose up --build
+docker exec -it my-backend sh
+curl http://localhost:5000
 
 ```
