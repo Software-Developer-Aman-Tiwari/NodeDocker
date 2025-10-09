@@ -30,3 +30,9 @@ pm2 save
 # 5. Check logs
 pm2 logs
 ```
+
+```bash
+
+docker compose build
+
+```
