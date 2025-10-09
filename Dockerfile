@@ -19,5 +19,8 @@ COPY . .
 # Expose the port your app runs on
 EXPOSE 5000
 
+RUN npm install pm2 -g
+CMD ["pm2-runtime", "index.js"]
+
 # Start the app
-CMD ["node", "index.js"]
+# CMD ["node", "index.js"]
